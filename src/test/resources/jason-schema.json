@@ -1,0 +1,23 @@
+{
+  "$id": "https://example.com/person.schema.json",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
+  "title": "Person",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9]*$",
+      "description": "The person's first name."
+    },
+    "firstName": {
+      "type": "string",
+      "pattern":"^[a-zA-Z0-9]+(?:\\s[a-zA-Z0-9]+)*$",
+      "description": "The person's FirstName."
+    },
+    "lastName": {
+      "type":"string",
+      "pattern":"^[a-zA-Z0-9]+(?:\\s[a-zA-Z0-9]+)*$",
+      "description": "The person's LastName."
+    }
+  }
+}
